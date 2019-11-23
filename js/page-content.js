@@ -17,8 +17,12 @@ body = {
 
 $(document).ready( function() {
   for (const page in body.elements) {
+    active = ""
+    if (page == 0) {
+      active = "is-active"
+    }
     $("#body").append(" \
-      <section class=\"mdl-layout__tab-panel\" id=\"" + body.elements[page].id + "\"> \
+      <section class=\"mdl-layout__tab-panel " + active + "\" id=\"" + body.elements[page].id + "\"> \
         <div class=\"page-content\"><p>THINGS " + page + "</p></div> \
       </section> \
     ")
