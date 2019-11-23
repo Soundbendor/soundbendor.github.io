@@ -1,4 +1,9 @@
-body = {
+// var content = $("content.json").get()
+// content = JSON.parse(content)
+
+import { addElement } from './utilities/addElement.js';
+
+var content = {
    elements: [
     {
       title: "Tab",
@@ -15,18 +20,18 @@ body = {
   ]
 }
 
-function update(page, active = "") {
-  var nav
+function createTab(elementNumber, active) {
+  var tabID = body.elements[elementNumber].id
+  var name = body.elements[elementNumber].title
 
-  $("#navigation").append("<a href=\"#" + body.elements[page].id + "\" class=\"mdl-layout__tab" + active + "\">" + body.elements[page].title + "</a>")
-  console.log($("#navigation").get()[0])
-  componentHandler.upgradeElement($("#navigation").get()[0])
+  var tab = "<a href=\"#" + tabID + "\" class=\"mdl-layout__tab" + active + "\">" + name + "</a>"
+  return tab
 }
 
-for (const page in body.elements) {
-  active = ""
-  if (page == 0) {
+for (const elementNumber in content.elements) {
+  var active = ""
+  if (elementNumber == 0) {
     active = " is-active"
   }
-  update(page, active)
+  addElement(createTab(elementNumber, active), "#navigation")
 }
