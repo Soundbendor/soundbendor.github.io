@@ -11,5 +11,5 @@ function createTab(elementNumber, active) {
 }
 
 for (const elementNumber in websiteContent.elements) {
-  addElement(createTab(elementNumber, isActive(elementNumber, 0)), "#navigation")
+  addElement(createTab(elementNumber, isActive(elementNumber, 0)), "#navigation-main")
 }

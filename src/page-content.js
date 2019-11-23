@@ -14,5 +14,5 @@ function createPage(pageNumber, active) {
 }
 
 for (const pageNumber in websiteContent.elements) {
-  addElement(createPage(pageNumber, isActive(pageNumber, 0)), "#body")
+  addElement(createPage(pageNumber, isActive(pageNumber, 0)), "#body-main")
 }
