@@ -1,6 +1,6 @@
 import { addElement } from './utilities/addElement.js'
 import { websiteContent } from './content.js'
-
+import { isActive } from './utilities/isActive.js'
 
 function createTab(elementNumber, active) {
   var tabID = websiteContent.elements[elementNumber].id
@@ -11,9 +11,5 @@ function createTab(elementNumber, active) {
 }
 
 for (const elementNumber in websiteContent.elements) {
-  var active = ""
-  if (elementNumber == 0) {
-    active = " is-active"
-  }
-  addElement(createTab(elementNumber, active), "#navigation")
+  addElement(createTab(elementNumber, isActive(elementNumber, 0)), "#navigation")
 }
