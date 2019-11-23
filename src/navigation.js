@@ -1,34 +1,16 @@
-// var content = $("content.json").get()
-// content = JSON.parse(content)
+import { addElement } from './utilities/addElement.js'
+import { websiteContent } from './content.js'
 
-import { addElement } from './utilities/addElement.js';
-
-var content = {
-   elements: [
-    {
-      title: "Tab",
-      id: "fixed-tab-1"
-    },
-    {
-      title: "Tabs",
-      id: "fixed-tab-2"
-    },
-    {
-      title: "Tabz",
-      id: "fixed-tab-3"
-    }
-  ]
-}
 
 function createTab(elementNumber, active) {
-  var tabID = body.elements[elementNumber].id
-  var name = body.elements[elementNumber].title
+  var tabID = websiteContent.elements[elementNumber].id
+  var name = websiteContent.elements[elementNumber].title
 
   var tab = "<a href=\"#" + tabID + "\" class=\"mdl-layout__tab" + active + "\">" + name + "</a>"
   return tab
 }
 
-for (const elementNumber in content.elements) {
+for (const elementNumber in websiteContent.elements) {
   var active = ""
   if (elementNumber == 0) {
     active = " is-active"
