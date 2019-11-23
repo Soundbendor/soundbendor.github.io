@@ -1,19 +1,6 @@
-body = {
-   elements: [
-    {
-      title: "Tab",
-      id: "fixed-tab-1"
-    },
-    {
-      title: "Tabs",
-      id: "fixed-tab-2"
-    },
-    {
-      title: "Tabz",
-      id: "fixed-tab-3"
-    }
-  ]
-}
+import { addElement } from './utilities/addElement.js'
+import { websiteContent } from './content.js'
+import { isActive } from './utilities/isActive.js'
 
 $(document).ready( function() {
   for (const page in body.elements) {

@@ -1,4 +1,4 @@
-# SoundBender Website
+# SoundBendor Website
 
 ## Run Locally
 1. Install node modules with the ```npm i``` command
