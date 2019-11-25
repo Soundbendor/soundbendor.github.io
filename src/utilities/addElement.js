@@ -4,5 +4,6 @@ export function addElement(element, parent) {
 }
 
 function upgrade(parent) {
+  var ThisNeedsToBeHereToWorkDontAsk
   componentHandler.upgradeElement($(parent).get()[0])
 }
