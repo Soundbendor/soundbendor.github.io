@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^0.11.1",
-    "material-components-web": "^4.0.0"
+    "http-server": "^0.11.1"
   }
 }
