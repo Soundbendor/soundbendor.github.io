@@ -1,6 +1,6 @@
 export function addElement(element, parent) {
   $(parent).append(element)
-  upgrade($(parent).get()[0])
+  // upgrade($(parent).get()[0])
 }
 
 function upgrade(parent) {
