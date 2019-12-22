@@ -14,10 +14,12 @@ function createPage(pageNumber, active, pageContent) {
   return page
 }
 
-for (const pageNumber in websiteContent.elements) {
-  var pageContent = websiteContent.elements[pageNumber].page
+export function initializePageContent() {
+  for (const pageNumber in websiteContent.elements) {
+    var pageContent = websiteContent.elements[pageNumber].page
 
-  $.get(pageContent, function(data) {
-    addElement(createPage(pageNumber, isActive(pageNumber, 0), data), "#body-main")
-  })
+    $.get(pageContent, function(data) {
+      addElement(createPage(pageNumber, isActive(pageNumber, 0), data), "#body-main")
+    })
+  }
 }
