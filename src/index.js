@@ -1,5 +1,3 @@
-import { initializeNavigation } from './navigation.js'
-import { initializePageContent } from './page-content.js'
+import { generateWebsite } from './app.js'
 
-const nav = initializeNavigation()
-const pages = initializePageContent()
+generateWebsite()
