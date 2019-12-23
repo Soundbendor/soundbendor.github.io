@@ -10,7 +10,7 @@ function createTab(elementNumber, active) {
   return tab
 }
 
-export function initializeNavigation() {
+export function generateNavigation() {
   for (const elementNumber in websiteContent.elements) {
     addElement(createTab(elementNumber, isActive(elementNumber, 0)), "#navigation-main")
   }

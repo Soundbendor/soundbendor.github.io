@@ -14,7 +14,7 @@ function createPage(pageNumber, active, pageContent) {
   return page
 }
 
-export function initializePageContent() {
+export function generatePageContent() {
   for (const pageNumber in websiteContent.elements) {
     var pageContent = websiteContent.elements[pageNumber].page
 
