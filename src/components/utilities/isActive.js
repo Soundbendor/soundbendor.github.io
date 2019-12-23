@@ -2,7 +2,7 @@ import { NAVTABACTIVECLASS, NAVTABACTIVE } from '../containers/navigation/elemen
 
 export function isActive(elementNumber, activeNumber) {
   const activeArray = [" " + NAVTABACTIVECLASS, NAVTABACTIVE]
-  switch (elementNumber) {
+  switch (parseInt(elementNumber)) {
     case activeNumber:
       return activeArray
     default:
