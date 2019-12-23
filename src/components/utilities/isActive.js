@@ -6,6 +6,6 @@ export function isActive(elementNumber, activeNumber) {
     case activeNumber:
       return activeArray
     default:
-      return ""
+      return ["", ""]
   }
 }
