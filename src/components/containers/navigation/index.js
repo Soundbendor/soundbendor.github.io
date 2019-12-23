@@ -1,6 +1,6 @@
-import { addElement } from './utilities/addElement.js'
-import { websiteContent } from './content.js'
-import { isActive } from './utilities/isActive.js'
+import { initializeNav } from './navigation.js'
+// import { addElement } from './utilities/addElement.js'
+// import { isActive } from './utilities/isActive.js'
 
 function createTab(elementNumber, active) {
   var tabID = websiteContent.elements[elementNumber].id
@@ -11,7 +11,8 @@ function createTab(elementNumber, active) {
 }
 
 export function generateNavigation() {
-  for (const elementNumber in websiteContent.elements) {
-    addElement(createTab(elementNumber, isActive(elementNumber, 0)), "#navigation-main")
-  }
+  initializeNav()
+  // for (const elementNumber in websiteContent.elements) {
+  //   addElement(createTab(elementNumber, isActive(elementNumber, 0)), "#navigation-main")
+  // }
 }
