@@ -1,5 +1,5 @@
-import { initializeNavigation } from './navigation.js'
-import { initializePageContent } from './page-content.js'
+import { initializeNavigation } from './components/navigation.js'
+import { initializePageContent } from './components/page-content.js'
 
 export function generateWebsite() {
   initializeNavigation()
