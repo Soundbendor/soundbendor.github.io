@@ -1,4 +1,4 @@
-import { initializeNav } from './navigation.js'
+import { initializeNav, initializeNavElements } from './navigation.js'
 // import { addElement } from './utilities/addElement.js'
 // import { isActive } from './utilities/isActive.js'
 
@@ -12,6 +12,7 @@ function createTab(elementNumber, active) {
 
 export function generateNavigation() {
   initializeNav()
+  initializeNavElements()
   // for (const elementNumber in websiteContent.elements) {
   //   addElement(createTab(elementNumber, isActive(elementNumber, 0)), "#navigation-main")
   // }
