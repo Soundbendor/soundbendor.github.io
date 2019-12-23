@@ -1,6 +1,6 @@
-import { addElement } from './utilities/addElement.js'
-import { websiteContent } from './content.js'
-import { isActive } from './utilities/isActive.js'
+// import { addElement } from './utilities/addElement.js'
+// import { websiteContent } from './content.js'
+// import { isActive } from './utilities/isActive.js'
 // import { loadHTML } from './utilities/loadHTML.js'
 
 function createPage(pageNumber, active, pageContent) {
@@ -15,11 +15,11 @@ function createPage(pageNumber, active, pageContent) {
 }
 
 export function generatePageContent() {
-  for (const pageNumber in websiteContent.elements) {
-    var pageContent = websiteContent.elements[pageNumber].page
-
-    $.get(pageContent, function(data) {
-      addElement(createPage(pageNumber, isActive(pageNumber, 0), data), "#body-main")
-    })
-  }
+  // for (const pageNumber in websiteContent.elements) {
+  //   var pageContent = websiteContent.elements[pageNumber].page
+  //
+  //   $.get(pageContent, function(data) {
+  //     addElement(createPage(pageNumber, isActive(pageNumber, 0), data), "#body-main")
+  //   })
+  // }
 }
