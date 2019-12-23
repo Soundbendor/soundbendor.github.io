@@ -1,11 +1,11 @@
+import { NAVTABACTIVECLASS, NAVTABACTIVE } from '../containers/navigation/elements.js'
+
 export function isActive(elementNumber, activeNumber) {
-  var active
-
-  if (elementNumber == activeNumber) {
-    active = " is-active"
-  } else {
-    active = ""
+  const activeArray = [NAVTABACTIVECLASS, NAVTABACTIVE]
+  switch (elementNumber) {
+    case activeNumber:
+      return activeArray
+    default:
+      return ""
   }
-
-  return active
 }
