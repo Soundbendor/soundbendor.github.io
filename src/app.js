@@ -1,5 +1,5 @@
-import { generateNavigation } from './components/navigation.js'
-import { generatePageContent } from './components/page-content.js'
+import { generateNavigation } from './components/containers/navigation/index.js'
+import { generatePageContent } from './components/containers/page-content/index.js'
 
 export function generateWebsite(websiteContent) {
   generateNavigation()
