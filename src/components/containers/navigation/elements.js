@@ -27,7 +27,6 @@ export function createTab(elementContent, elementNumber, activeArray, icon = "")
   const tabID = name + elementNumber
   const activeClass = activeArray[0]
   const activeSpan = activeArray[1]
-  console.log(activeArray)
 
   const tab = "<button class=\"mdc-tab" + activeClass + "\" role=\"tab\" aria-selected=\"true\" tabindex=\"" +
     elementNumber + "\">" +
