@@ -1,6 +1,6 @@
 // Strings
 export const NAVOUTLINE =
-  "<div class=\"mdc-tab-bar\" role=\"tablist\" data-mdc-auto-init=\"MDCTabBar\">" +
+  "<div class=\"mdc-tab-bar fixed_bottom\" role=\"tablist\" data-mdc-auto-init=\"MDCTabBar\">" +
     "<div class=\"mdc-tab-scroller\">" +
       "<div class=\"mdc-tab-scroller__scroll-area\">" +
         "<div class=\"mdc-tab-scroller__scroll-content\"></div>" +
