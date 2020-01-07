@@ -5,7 +5,6 @@ export function isActiveNavigation(elementNumber, activeNumber) {
     case: [" " + NAVTABACTIVECLASS, " " + NAVTABELEMENTACTIVECLASS],
     default: ["", ""]
   }
-
   return isActive(elementNumber, activeNumber, activeReturn)
 }
 
