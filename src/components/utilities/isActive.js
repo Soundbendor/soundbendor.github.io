@@ -10,8 +10,8 @@ export function isActiveNavigation(elementNumber, activeNumber) {
 
 export function isActivePage(elementNumber, activeNumber) {
   const activeReturn = {
-    case: "stuff",
-    default: "other stuff"
+    case: "",
+    default: "none"
   }
   return isActive(elementNumber, activeNumber, activeReturn)
 }
