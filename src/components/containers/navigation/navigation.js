@@ -10,13 +10,13 @@ export function initializeNav() {
   $("#main").append(NAVOUTLINE)
 }
 
-export function initializeNavElements(elements) {
+export function initializeNavElements(elements, landingPageIndex) {
   for (const elementNumber in elements) {
     addElement(
       createTab(
         elements[elementNumber],
         elementNumber,
-        isActive(elementNumber, 0)
+        isActive(elementNumber, landingPageIndex)
       ),
       NAVOUTLINECLASS
     )

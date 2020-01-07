@@ -28,7 +28,7 @@ export function createIcon(iconName) {
   "</span>")
 }
 export function createTab(elementContent, elementNumber, activeArray, icon = "") {
-  const name = elementContent.title
+  const name = elementContent
   const tabID = name + elementNumber
   const activeClass = activeArray[0]
   const activeSpan = createTabActive(activeArray[1])

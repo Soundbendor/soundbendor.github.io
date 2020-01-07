@@ -3,8 +3,9 @@ import { initializeNav, initializeNavElements } from './navigation.js'
 // import { isActive } from './utilities/isActive.js'
 
 export function generateNavigation(navContent) {
+  const landingPageIndex = navContent.landingPageIndex
   const elements = navContent.elements
 
   initializeNav()
-  initializeNavElements(elements)
+  initializeNavElements(elements, landingPageIndex)
 }
