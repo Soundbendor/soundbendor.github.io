@@ -1,5 +1,5 @@
-import { MDCINIT } from './elements.js'
+import { initializeMDCINIT } from './scripts.js'
 
-export function initializeScripts() {
-  $("#main").append(MDCINIT)
+export function generateScripts() {
+  initializeMDCINIT()
 }
