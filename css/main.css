@@ -1,10 +1,3 @@
-.fixed_bottom {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
 /* If you wish to apply one of these colors to an object use the class next to it */
 :root {
   --mdc-theme-primary: #fff;                  /* mdc-theme--primary */
@@ -16,4 +9,15 @@
   --mdc-theme-on-secondary: #fff;             /* mdc-theme--on-secondary */
   --mdc-theme-on-surface: #000;               /* mdc-theme--on-surface */
   --mdc-theme-on-error: #fff;                 /* unknown */
+}
+
+.fixed_bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.none {
+  display: none;
 }
