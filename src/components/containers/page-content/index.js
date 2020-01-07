@@ -1,25 +1,25 @@
-// import { addElement } from './utilities/addElement.js'
-// import { websiteContent } from './content.js'
-// import { isActive } from './utilities/isActive.js'
-// import { loadHTML } from './utilities/loadHTML.js'
+import { addElement } from '../../utilities/addElement.js'
+import { isActivePage as isActive } from '../../utilities/isActive.js'
+import { createPage, updatePage } from './elements.js'
 
-function createPage(pageNumber, active, pageContent) {
-  var pageID = websiteContent.elements[pageNumber].id
-  var page
+export function generatePageContent(pages, landingPageIndex) {
+  const nav = mdc.tabBar.MDCTabBar.attachTo(document.querySelector('.mdc-tab-bar'))
+  var pageIds = []
 
-  page = "<section class=\"mdl-layout__tab-panel" + active + "\" id=\"" + pageID + "\">"
-  page += pageContent
-  page += "</section>"
+  nav.listen('MDCTab:interacted', function (event) {
+    const pageId = event.detail.tabId
+    const pageIndex = parseInt(pageId.split("-")[2])
 
-  return page
-}
+    for (const idNumber in pageIds) {
+      updatePage(isActive(parseInt(idNumber) + 1, pageIndex), pageIds[idNumber])
+    }
+  })
 
-export function generatePageContent() {
-  // for (const pageNumber in websiteContent.elements) {
-  //   var pageContent = websiteContent.elements[pageNumber].page
-  //
-  //   $.get(pageContent, function(data) {
-  //     addElement(createPage(pageNumber, isActive(pageNumber, 0), data), "#body-main")
-  //   })
-  // }
+  for (const pageNumber in pages) {
+    const pagePath = pages[pageNumber]
+    const pageId = "page-mdc-tab-" + (parseInt(pageNumber) + 1)
+    pageIds.push(pageId)
+
+    createPage(pagePath, isActive(pageNumber, landingPageIndex), pageId)
+  }
 }
