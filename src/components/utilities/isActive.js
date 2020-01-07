@@ -1,11 +1,27 @@
 import { NAVTABACTIVECLASS, NAVTABELEMENTACTIVECLASS } from '../containers/navigation/elements.js'
 
-export function isActive(elementNumber, activeNumber) {
-  const activeArray = [" " + NAVTABACTIVECLASS, " " + NAVTABELEMENTACTIVECLASS]
+export function isActiveNavigation(elementNumber, activeNumber) {
+  const activeReturn = {
+    case: [" " + NAVTABACTIVECLASS, " " + NAVTABELEMENTACTIVECLASS],
+    default: ["", ""]
+  }
+
+  return isActive(elementNumber, activeNumber, activeReturn)
+}
+
+export function isActivePage(elementNumber, activeNumber) {
+  const activeReturn = {
+    case: "stuff",
+    default: "other stuff"
+  }
+  return isActive(elementNumber, activeNumber, activeReturn)
+}
+
+function isActive(elementNumber, activeNumber, returnValue) {
   switch (parseInt(elementNumber)) {
     case activeNumber:
-      return activeArray
+      return returnValue.case
     default:
-      return ["", ""]
+      return returnValue.default
   }
 }

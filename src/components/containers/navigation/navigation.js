@@ -4,7 +4,7 @@ import {
   NAVOUTLINECLASS,
   createTab
 } from './elements.js'
-import { isActive } from '../../utilities/isActive.js'
+import { isActiveNavigation as isActive } from '../../utilities/isActive.js'
 
 export function initializeNav() {
   $("#main").append(NAVOUTLINE)
