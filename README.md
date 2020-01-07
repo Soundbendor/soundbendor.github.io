@@ -8,5 +8,5 @@
 ### NPM
 1. [http-server](https://www.npmjs.com/package/http-server) - Used to locally host if need be
 ### CDNs
-1. [Markdown UI Lite](https://getmdl.io/index.html) - Basic layout and styling
+1. [Markdown UI components](https://material-components.github.io/material-components-web-catalog/#/) - Basic layout and styling
 2. [Jquery](https://jquery.com/) - Dynamic Layout (specifically using Google's CDN)
