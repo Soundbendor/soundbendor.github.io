@@ -1,4 +1,5 @@
 export const websiteContent = {
+  websiteTitle: "SoundBendor",
   landingPageIndex: 0,
   navigation: [ "Tab", "Tabs", "Tabz" ],
   pages: [
