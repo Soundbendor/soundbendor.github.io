@@ -1,4 +1,4 @@
-import { NAVTABACTIVECLASS, NAVTABELEMENTACTIVECLASS, createTabActive } from '../containers/navigation/elements.js'
+import { NAVTABACTIVECLASS, NAVTABELEMENTACTIVECLASS } from '../containers/navigation/elements.js'
 
 export function isActive(elementNumber, activeNumber) {
   const activeArray = [" " + NAVTABACTIVECLASS, " " + NAVTABELEMENTACTIVECLASS]
