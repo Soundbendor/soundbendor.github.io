@@ -3,7 +3,7 @@ import { generatePageContent } from './components/containers/page-content/index.
 import { initializeScripts } from './components/containers/scripts/index.js'
 
 export function generateWebsite(websiteContent) {
-  generateNavigation(websiteContent.navigation)
-  generatePageContent()
+  generateNavigation(websiteContent.navigation, websiteContent.landingPageIndex)
+  generatePageContent(websiteContent.pages, websiteContent.landingPageIndex)
   initializeScripts()
 }
