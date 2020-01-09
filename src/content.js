@@ -5,6 +5,7 @@
 
 export const websiteContent = {
   websiteTitle: "SoundBendor",
+  websiteDesc: "This is a website description",
   landingPageIndex: 0,
   navigation: [ "Tab", "Tabs", "Tabz" ],
   pages: [
