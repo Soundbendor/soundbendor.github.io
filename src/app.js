@@ -6,7 +6,8 @@ import { generateHeaderData } from './components/containers/header-data/index.js
 export function generateWebsite(websiteContent) {
   const headerData = {
     title: websiteContent.websiteTitle,
-    desc: websiteContent.websiteDesc
+    desc: websiteContent.websiteDesc,
+    keywords: websiteContent.websiteKeywords
   }
   const landingPageIndex = websiteContent.landingPageIndex
   const navigation = websiteContent.navigation
