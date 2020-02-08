@@ -16,6 +16,8 @@ export const websiteContent = {
   ]
 }
 
+// TODO: Error Handeling
+
 // Everything the content object can have
 // {
 //  websiteTitle: "Some string, should be short but descriptive for SEO"
