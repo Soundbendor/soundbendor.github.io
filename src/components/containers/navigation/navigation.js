@@ -7,7 +7,7 @@ import {
 import { isActiveNavigation as isActive } from '../../utilities/isActive.js'
 
 export function initializeNav() {
-  $("#main").append(NAVOUTLINE)
+  addElement(NAVOUTLINE, "#main")
 }
 
 export function initializeNavElements(elements, landingPageIndex) {
