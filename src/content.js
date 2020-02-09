@@ -15,12 +15,118 @@ export const websiteContent = {
       path: "./src/pages/landingPage/index.html"
     },
     {
-      type: "path",
-      path: "./src/pages/secondPage/index.html"
+      type: "card",
+      columnAmount: 3,
+      cards: [
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        }
+      ]
     },
     {
-      type: "path",
-      path: "./src/pages/thirdPage/index.html"
+      type: "card",
+      columnAmount: 3,
+      cards: [
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        },
+        {
+          picture: "https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg",
+          titleOne: "Our Changing Planet",
+          titleTwo: "by Kurt Wagner",
+          mainText: "Visit ten places on our planet that are undergoing the biggest changes today.",
+        }
+      ]
     }
   ]
 }

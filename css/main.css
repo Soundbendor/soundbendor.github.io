@@ -1,7 +1,7 @@
 /* If you wish to apply one of these colors to an object use the class next to it */
 :root {
   --mdc-theme-primary: #fff;                  /* mdc-theme--primary */
-  --mdc-theme-secondary: #018786;             /* mdc-theme--secondary */
+  --mdc-theme-secondary: #D73F09;             /* mdc-theme--secondary */
   --mdc-theme-background: #D73F09;            /* mdc-theme--background */
   --mdc-theme-surface: #fff;                  /* mdc-theme--surface */
   --mdc-theme-error: #b00020;                 /* unknown */
@@ -16,8 +16,13 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .none {
   display: none;
+}
+
+#main {
+  margin-bottom: 5%;
 }

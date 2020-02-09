@@ -10,7 +10,8 @@ export function initializePages(pages, landingPageIndex) {
     const pageId = "page-mdc-tab-" + (parseInt(pageNumber) + 1)
     pageIds.push(pageId)
 
-    determinePageType(pageObject, isActive(pageNumber, landingPageIndex), pageId)
+    const cardPageId = "cardPage-" + parseInt(pageNumber)
+    determinePageType(pageObject, isActive(pageNumber, landingPageIndex), pageId, cardPageId)
   }
 
   return pageIds
